@@ -1,0 +1,20 @@
+<html>
+<head>
+    This is test image site <br>
+    <a>
+        <a class="navbar-brand" href="display">View Image</a>
+    </a>
+</head>
+<body>
+<br>
+<form action="{% url 'index' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div>
+        <input type="file" name="image">
+    </div>
+    <div>
+        <input type="text" name="name">
+    </div>
+    <button type="submit" class="btn btn-primary " allign="centre">SUBMIT</button>
+</form>
+</body>
+</html>
