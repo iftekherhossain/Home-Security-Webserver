@@ -16,5 +16,4 @@ def index(request):
 def display(request):
     last_entry = My_Model.objects.last()
     context = {'last_entry': last_entry}
-    print("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",type(context))
     return render(request, "app/display.html", context)
