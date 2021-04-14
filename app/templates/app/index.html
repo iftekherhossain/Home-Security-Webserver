@@ -7,7 +7,7 @@
 </head>
 <body>
 <br>
-<form action="{% url 'index' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+<form action="{% url 'index' %}" method="POST" enctype="multipart/form-data">{% csrf_token %}
     <div>
         <input type="file" name="image">
     </div>
