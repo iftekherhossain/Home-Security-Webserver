@@ -27,7 +27,7 @@ SECRET_KEY = '*=5ux0rl7&#%3i_vqib@n4a(_%^@l5d%1&+dbz_+$2-y#b4bjx'
 DEBUG = True
 
 ALLOWED_HOSTS = ['image-upload-nabil.herokuapp.com','127.0.0.1','localhost']
-CSRF_TRUSTED_ORIGINS = ["image-upload-nabil.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = ['image-upload-nabil.herokuapp.com']
 
 # Application definition
 
@@ -132,13 +132,3 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': '7RV5Q2vSxunqRezGbJKTuPLIzr8'
 }
 
-
-CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SECURE = ENABLE_HTTPS
-# Store CSRF token in session (since Django 1.11)
-CSRF_USE_SESSIONS = True
-SESSION_COOKIE_SECURE = ENABLE_HTTPS
-# SSL redirect
-SECURE_SSL_REDIRECT = ENABLE_HTTPS
-# Session cookie age (in seconds)
-SESSION_COOKIE_AGE = 1209600
