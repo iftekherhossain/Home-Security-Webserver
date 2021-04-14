@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import My_Model
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 @csrf_exempt
