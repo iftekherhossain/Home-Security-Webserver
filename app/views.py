@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import My_Model
 # Create your views here.
 
+@csrf_exempt
 def index(request):
     if request.method=='POST':
         print("Done and Dusted!")
