@@ -26,7 +26,7 @@ SECRET_KEY = '*=5ux0rl7&#%3i_vqib@n4a(_%^@l5d%1&+dbz_+$2-y#b4bjx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['image-upload-nabil.herokuapp.com']
+ALLOWED_HOSTS = ['image-upload-nabil.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app'
+    'app',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL ='/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dfgvhnwcq',
+    'API_KEY': '326952896765599',
+    'API_SECRET': '7RV5Q2vSxunqRezGbJKTuPLIzr8'
+}
