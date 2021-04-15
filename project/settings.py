@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*=5ux0rl7&#%3i_vqib@n4a(_%^@l5d%1&+dbz_+$2-y#b4bjx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['image-upload-nabil.herokuapp.com','127.0.0.1','localhost']
 
