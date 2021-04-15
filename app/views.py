@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from .models import My_Model
-#from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
+@csrf_exempt
 def index(request):
     if request.method=='POST':
         print("Done and Dusted!")
