@@ -27,7 +27,6 @@ SECRET_KEY = '*=5ux0rl7&#%3i_vqib@n4a(_%^@l5d%1&+dbz_+$2-y#b4bjx'
 DEBUG = True
 
 ALLOWED_HOSTS = ['image-upload-nabil.herokuapp.com','127.0.0.1','localhost']
-CSRF_TRUSTED_ORIGINS = ['image-upload-nabil.herokuapp.com']
 
 # Application definition
 
@@ -124,7 +123,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL ='/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dfgvhnwcq',
